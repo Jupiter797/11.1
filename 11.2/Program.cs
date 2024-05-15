@@ -10,7 +10,7 @@ namespace _11._2
     {
         delegate int MathOperation(int x, int y);
 
-        static void Calcucalculation(int a, int b, MathOperation operation)
+        static void Calculate(int a, int b, MathOperation operation)
         {
             int result = operation(a, b);
 
@@ -22,13 +22,13 @@ namespace _11._2
             Console.InputEncoding = Encoding.Unicode;
             Console.OutputEncoding = Encoding.Unicode;
 
-            Calcucalculation(10, 3, (x, y) => x + y);
+            Calculate(10, 3, (x, y) => x + y);
 
-            Calcucalculation(10, 3, (x, y) => x - y);
+            Calculate(10, 3, (x, y) => x - y);
 
-            Calcucalculation(10, 3, (x, y) => x * y);
+            Calculate(10, 3, (x, y) => x * y);
 
-            Calcucalculation(10, 3, (x, y) => x / y);
+            Calculate(10, 3, (x, y) => x / y);
 
             Console.CursorVisible = false;
             Console.ReadKey();
