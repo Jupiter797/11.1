@@ -19,12 +19,12 @@ namespace _11._1
             Console.InputEncoding = Encoding.Unicode;
             Console.OutputEncoding = Encoding.Unicode;
 
-            MyDelegate delegateInstance = new MyDelegate(PrintNumber);
+            MyDelegate myDelgate = new MyDelegate(PrintNumber);
 
             Console.Write("Введіть число : ");
             int number = Convert.ToInt32(Console.ReadLine());
 
-            delegateInstance(number); 
+            myDelgate(number); 
 
             Console.CursorVisible = false;
             Console.ReadKey();
